@@ -101,7 +101,7 @@ p{
 }
 
 .thumbnails img{
-    width: 190px;
+    width: auto;
     height: 120px;
     margin: 10px;
     border: 2px solid #ddd;
