@@ -1,0 +1,114 @@
+body{
+    background-color: #D0DFF2;
+}
+
+#icon{
+    margin-right: 5px;
+    width: 20px;
+    display: none;
+}
+
+@media screen and (max-width:750px){
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #icon{
+        display: initial;
+        margin-right: 1%;
+        margin-left: auto;
+        padding: 1%;
+    }
+
+    #icon:hover{
+        cursor :pointer;
+    }
+    
+    #botones button{
+        display: block;
+    }
+
+    #botones{
+        float: right;
+        position: relative;
+        display: none;
+        flex-direction: column;
+        margin-right: 1%;
+        margin-left: auto;
+    }
+    #botones.show{
+        display: flex;
+    }
+}
+
+@media screen and (min-width:750px){
+    .navbar{
+        text-align: center;
+    }
+
+}
+.navbar{
+    background-color: #035AA6;
+    overflow: hidden;
+    margin: -8px;
+}
+
+button[type="menu"]{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    margin-bottom: 3px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 1% 5%;
+    background-color: #035AA6;
+    color: #E89BF2;
+    border: none;
+    float: left;
+}
+
+button[type="menu"]:hover{
+    background-color: #E89BF2;
+    color:#035AA6;
+    cursor: pointer;
+}
+
+button[type="menu"].activo{
+    background-color: #E89BF2;
+    color:#035AA6;
+}
+
+h1{
+    text-align: center;
+    color: #035AA6;
+    font-family: Tahoma;
+}
+
+p{
+    font-size: medium;
+}
+
+#cont{
+    margin: 5%;
+}
+
+.thumbnails{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.thumbnails img{
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.thumbnails img:hover{
+    transform: scale(1.3);
+}
