@@ -34,7 +34,7 @@ mql.addEventListener("change", (event) =>{
     icon1.addEventListener('click', () => {
             b.classList.toggle("show");
     });
-    element.addEventListener('touchstart', () => {
+    icon1.addEventListener('touchstart', () => {
             b.classList.toggle("show");
 });
     butons.forEach(item => {
