@@ -23,9 +23,7 @@ function cargarEnContenido(html){ //Desde el botón obtenemos el html correspond
 }
 
 
-const mql = window.matchMedia("(max-width: 750px)");
 
-mql.addEventListener("change", (event) =>{
 
     const icon1 = document.getElementById("icon");
     const butons = document.querySelectorAll("#botones button");
@@ -43,4 +41,4 @@ mql.addEventListener("change", (event) =>{
         });
     })
 
-});
+
