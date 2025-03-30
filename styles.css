@@ -60,7 +60,7 @@ body{
 
 button[type="menu"]{
     font-family: Calibri, 'Trebuchet MS', sans-serif;
-    font-size: xx-large;
+    font-size: large;
     margin-bottom: 3px;
     margin-left: 0px;
     margin-right: 0px;
@@ -85,7 +85,7 @@ button[type="menu"].activo{
 h1{
     text-align: center;
     color: #035AA6;
-    font-family: Tahoma;
+    font-family: Tahoma, calibri;
 }
 
 h2{
