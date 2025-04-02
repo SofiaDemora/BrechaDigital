@@ -157,10 +157,6 @@ a:hover{
     margin-bottom: 3%;
 }
 
-.graficas{
-    margin:1%;
-}
-
 #creditos{
     font-size: small;
 }
@@ -228,4 +224,5 @@ a:hover{
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin: 1%;
 }
