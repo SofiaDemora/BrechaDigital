@@ -41,4 +41,18 @@ function cargarEnContenido(html){ //Desde el botón obtenemos el html correspond
         });
     })
 
-
+    const imgCorrs = document.querySelectorAll('.imagenes_Corredizas img');
+    const fullImageContainer = document.querySelector('.full-image-container');
+    const fullImage = document.getElementById('full-image');
+    const closeBtn = document.querySelector('.close-btn');
+    
+    imgCorrs.forEach(imgCorr => {
+        imgCorr.addEventListener('click', () => {
+            fullImage.src = imgCorr.src;
+            fullImageContainer.style.display = 'flex';
+            });
+    });
+    
+    closeBtn.addEventListener('click', () => {
+        fullImageContainer.style.display = 'none';
+    });
