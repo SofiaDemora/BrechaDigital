@@ -158,7 +158,7 @@ a:hover{
 }
 
 .graficas{
-    width: 100%;
+    margin:1%;
 }
 
 #creditos{
@@ -171,6 +171,8 @@ a:hover{
 }
 
 .imagenes_Corredizas{
+    margin-left: -7%;
+    margin-right: -7%;
     display: flex;
     overflow: scroll;
     scrollbar-width: none;
@@ -179,8 +181,6 @@ a:hover{
 }
 
 .imagenes_Corredizas img{
-    width: 580px;
-    height: auto;
     border-radius: 5px;
     border: 2px solid #ff90ff;
     box-shadow: 0px 0px 8px #ff90ff;
@@ -227,4 +227,5 @@ a:hover{
 .graf{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
