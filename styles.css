@@ -121,7 +121,7 @@ p{
     width: auto;
     height: 150px;
     margin: 10px;
-    border: 2px solid #ddd;
+    border: 2px solid #ff90ff;
     border-radius: 5px;
     transition: transform 0.3s ease;
 }
