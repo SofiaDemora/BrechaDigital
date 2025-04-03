@@ -45,6 +45,14 @@ body{
     #botones.show{
         display: flex;
     }
+    
+    .imagenes_Corredizas{
+        flex-direction: column;
+    }
+
+    .graf img{
+        max-width: 98%;
+    }
 }
 
 @media screen and (min-width:750px){
@@ -168,12 +176,11 @@ a:hover{
 }
 
 .imagenes_Corredizas{
-    margin-left: -6.5%;
+    margin-left: -7%;
     margin-right: -6.5%;
     display: flex;
     overflow: scroll;
     scrollbar-width: none;
-    gap: 10px;
     padding: 10px;
 }
 
@@ -184,7 +191,6 @@ a:hover{
     box-shadow: 0px 0px 8px #ff90ff;
     cursor: pointer;
     transition: transform 0.3s ease;
-    margin: 1%;
 }
 
 .imagenes_Corredizas img:hover{
@@ -201,7 +207,6 @@ a:hover{
     width: 100%;
     height: 100%;
     background-color: rgba(3,90,166,0.9);
-    z-index: 1000000;
 }
 
 #full-image{
@@ -229,6 +234,8 @@ a:hover{
     display: flex;
     flex-direction: column;
     width: 100%;
+    align-items: center;
+    margin-left: 2%;
 }
 
 .textG{
