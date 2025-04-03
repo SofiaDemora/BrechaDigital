@@ -2,9 +2,8 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estadísticas.</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -30,14 +29,14 @@
         <div class="imagenes_Corredizas">
             <div class="graf">
                 <img class="graficas" src="imgs/grafico1.png" alt="Gráfica.">
-                <p id="textG">Podemos visualizar en la gáfica <strong>1</strong> que en el año 2022 
+                <p class="textG">Podemos visualizar en la gáfica <strong>1</strong> que en el año 2022 
                 un 91% de los hogares tenía acceso a conexión de internet, mientras 
                 que un 71% tenía acceso a Conexión de Banda Ancha Fija.
                 </p>
             </div>
             <div class="graf">
                 <img class="img_corr" src="imgs/grafico2.png" alt="Gráfica.">
-                <p id="textG">El acceso a internet en los hogares varía según la región y el nivel de
+                <p class="textG">El acceso a internet en los hogares varía según la región y el nivel de
                     ingresos (Gráfica 2). En Montevideo, el 95% de los hogares cuenta con
                     conexión a internet, mientas que esta cifra es del 88% para el Interior.
                     En cuanto al acceso a banda ancha fija, la diferencia es mayor: 83% en
@@ -53,7 +52,7 @@
             </div>
             <div class="graf">
                 <img class="img_corr" src="imgs/grafico3y4.png" alt="Gráfica.">
-                <p id="textG">En relación con la situación del país antes de la pandemia, puede
+                <p class="textG">En relación con la situación del país antes de la pandemia, puede
                     notarse que el crecimiento en el acceso a internet de los hogares fue
                     más pronunciado en el interior del país, donde evoluciona de 83% en
                     2019 a 88% en 2022, mientras que en Montevideo pasa de 94% a 95% en
@@ -64,8 +63,8 @@
                 </p>    
             </div>
             <div class="graf">
-                <img class="img_corr" src="tabla.png" alt="Tabla.">
-                <p id="textG">La PC es el principal dispositivo digital no celular con el que cuentan
+                <img class="img_corr" src="imgs/tabla.png" alt="Tabla.">
+                <p class="textG">La PC es el principal dispositivo digital no celular con el que cuentan
                     los hogares uruguayos. Alrededor de 6 de cada 10 hogares cuenta con
                     al menos una PC, y 3 de cada 10 cuenta con al menos una tableta. El
                     mayor porcentaje de hogares con PC corresponde a 2013, donde era el
@@ -81,9 +80,11 @@
                 </p>
             </div>
         </div>
+        
         <div class="full-image-container">
             <span class="close-btn">&times;</span>
             <img id="full-image" src="" alt="Imagen completa.">
+            <p id="txtG" src=""></p>
         </div>
 
         <p id="creditos">Esta información fue seleccionada a partir del archivo y registro del Informe 
@@ -91,7 +92,6 @@
             <a href="https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/datos-y-estadisticas/estadisticas/encuesta-uso-tecnologias-informacion-comunicacion-2022">aquí.</a>
         </p>
     </div>
-    <script src="script.js"></script>
 
 </body>
 </html>

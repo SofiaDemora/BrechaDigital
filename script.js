@@ -10,6 +10,27 @@ misBotones.forEach((bNav, i) => { //Recorremos cada botón.
     });
 });
 
+
+
+function asignarListeners(){
+    const thumbnails = document.querySelectorAll(".imagenes_Corredizas img");
+    const fullImageContainer = document.querySelector(".full-image-container");
+    const fullImage = document.getElementById("full-image");
+    const closeBtn = document.querySelector(".close-btn");
+
+    thumbnails.forEach(thumbnail => {
+        thumbnail.addEventListener('click', () => {
+            fullImage.src = thumbnail.src;
+            fullImageContainer.style.display = 'flex';
+            });
+    });
+
+    closeBtn.addEventListener('click', () => {
+        fullImageContainer.style.display = 'none';
+    });
+}
+
+
 const contenido = document.getElementById("cont");
 
 function cargarEnContenido(html){ //Desde el botón obtenemos el html correspondiente.
@@ -17,6 +38,7 @@ function cargarEnContenido(html){ //Desde el botón obtenemos el html correspond
     .then(response => response.text()) //Lo obtenemos y lo convertimos en texto.
     .then(data => {
         contenido.innerHTML = data; //Ese texto lo mostramos en nuestro div con id = contenido.
+        asignarListeners();
     })
     const cab = document.getElementById("cab");
     cab.style.display = "none";
@@ -40,19 +62,3 @@ function cargarEnContenido(html){ //Desde el botón obtenemos el html correspond
             b.classList.remove("show");
         });
     })
-
-    const imgCorrs = document.querySelectorAll('.imagenes_Corredizas img');
-    const fullImageContainer = document.querySelector('.full-image-container');
-    const fullImage = document.getElementById('full-image');
-    const closeBtn = document.querySelector('.close-btn');
-    
-    imgCorrs.forEach(imgCorr => {
-        imgCorr.addEventListener('click', () => {
-            fullImage.src = imgCorr.src;
-            fullImageContainer.style.display = 'flex';
-            });
-    });
-    
-    closeBtn.addEventListener('click', () => {
-        fullImageContainer.style.display = 'none';
-    });
